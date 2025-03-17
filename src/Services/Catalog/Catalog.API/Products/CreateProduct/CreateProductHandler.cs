@@ -22,7 +22,7 @@ public class CreateProductCommandHandler(IDocumentSession session) : ICommandHan
         };
 
 
-        // Save to db (skip this step)
+        // Save to db
 
         session.Store(product);
         await session.SaveChangesAsync(cancellationToken);
