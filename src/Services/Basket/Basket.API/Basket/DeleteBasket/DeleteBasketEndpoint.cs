@@ -15,11 +15,11 @@ public class DeleteBasketEndpoints : ICarterModule
 
             return Results.Ok(response);
         })
-        .WithName("DeleteProduct")
+        .WithName("DeleteBasket")
         .Produces<DeleteBasketResponse>(StatusCodes.Status200OK)
         .ProducesProblem(StatusCodes.Status400BadRequest)
         .ProducesProblem(StatusCodes.Status404NotFound)
-        .WithSummary("Delete Product")
-        .WithDescription("Delete Product");
+        .WithSummary("Delete Basket")
+        .WithDescription("Delete Basket");
     }
 }
